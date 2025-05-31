@@ -9,6 +9,9 @@ resource "aws_ecs_service" "medusa-cluster-service" {
     security_groups  = var.security_group_id
     assign_public_ip = true
   }
+    health_check_grace_period_seconds = 430# ✅ CORRECT PLACE
+  
+
   load_balancer {
     target_group_arn = var.target_group_arn
     container_name   = "medusa"
