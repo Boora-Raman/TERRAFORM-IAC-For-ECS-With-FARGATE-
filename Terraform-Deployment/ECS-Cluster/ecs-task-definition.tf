@@ -8,12 +8,12 @@ resource "aws_ecs_task_definition" "TD" {
   container_definitions = jsonencode([
     {
       name  = "medusa"
-      image = "booraraman/easy-drive-rentals:v1.1"
+      image = "booraraman/medusa"
       essential = true
       portMappings = [
         {
-          containerPort = 6500
-          hostPort      = 6500
+          containerPort = 9000
+          hostPort      = 9000
           protocol      = "tcp"
         }
       ]
