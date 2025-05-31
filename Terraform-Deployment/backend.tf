@@ -1,3 +1,14 @@
+terraform {
+backend "s3" {
+    bucket         = "medusa-s3-bucket-777"
+    dynamodb_table = "state-lock"
+    key            = "/TERRAFORM-IAC-For-ECS-With-FARGATE-/Terraform-Deployment/terraform.tfstate"
+    region         = "us-east-1"
+    encrypt        = true
+}
+}
+
+
 resource "aws_s3_bucket" "State_bucket" {
   bucket = "medusa-s3-bucket-777"
   
