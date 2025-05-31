@@ -3,4 +3,4 @@ resource "aws_ecs_cluster" "medusa-cluster" {
   tags = {
     name = "medusa-deployment-cluster"
   }
-}
+} 
