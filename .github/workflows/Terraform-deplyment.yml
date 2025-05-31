@@ -3,7 +3,7 @@ name: Terraform Deploy Pipeline
 on:
   push:
     paths:
-      - "Terraform-Deployment/ECS-Cluster/**"
+      - "Terraform-Deployment/**"
     branches:
       - main  # Only apply on main branch pushes
 
