@@ -8,7 +8,7 @@ resource "aws_ecs_task_definition" "TD" {
   container_definitions = jsonencode([
     {
       name  = "medusa"
-      image = "booraraman/medusa"
+      image = "booraraman/medusa:4f7340f2d12062a5dc84e6bcfb837cd59ce2f263"
       essential = true
       portMappings = [
         {
