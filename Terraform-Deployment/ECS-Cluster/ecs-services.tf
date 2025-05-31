@@ -12,7 +12,7 @@ resource "aws_ecs_service" "medusa-cluster-service" {
   load_balancer {
     target_group_arn = var.target_group_arn
     container_name   = "medusa"
-    container_port   = 3000
+    container_port   = 9000
   }
 }
 
