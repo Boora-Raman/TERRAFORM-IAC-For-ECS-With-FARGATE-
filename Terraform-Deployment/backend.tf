@@ -7,7 +7,3 @@ terraform {
     dynamodb_table = "medusa-terraform-lock"
   }
 }
-
-provider "aws" {
-  region = "us-east-1"
-}
